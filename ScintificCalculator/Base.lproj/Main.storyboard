@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QUn-qC-UX6">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kCe-fQ-U3y">
+            <objects>
+                <viewController id="QUn-qC-UX6" customClass="ViewController" customModule="ScintificCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zej-8u-UJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G3d-W5-JCf">
+                                <rect key="frame" x="10" y="352" width="394" height="510"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kkk-qQ-jEz">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAp-4O-j6a" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="AC">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="vom-La-va4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="38" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q08-QD-MVU" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="±">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="RW6-jQ-G5S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTE-Fa-BOH" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="% ">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="TgQ-E5-P9f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-sY-oQN" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="÷">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="SRC-bM-UW9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact">
+                                            <nil key="backgroundColor"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H6k-vL-WDN">
+                                        <rect key="frame" x="0.0" y="104" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgo-Om-S64" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="0Jj-6b-XIH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNW-ka-K5T" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="mhJ-Wm-dQ0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QY7-Ld-rXC" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="2kX-ix-LlW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-du-Ubh" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="×">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="QaY-K7-wBK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact">
+                                            <nil key="backgroundColor"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hmm-9D-pPJ">
+                                        <rect key="frame" x="0.0" y="208" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQA-NV-SL4" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="Gc3-3n-VYZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2T-bD-XOQ" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="tBl-bX-4Hh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yz-ka-cwa" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="aA4-Zu-xbo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8A-vq-Hvo" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="fRI-UW-ot0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact">
+                                            <nil key="backgroundColor"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uZq-Ta-FW1">
+                                        <rect key="frame" x="0.0" y="312" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwL-YV-QoZ" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="dc9-jg-P8X"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lr-Z5-Oef" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="101" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="kgS-qa-XlO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-sv-yNn" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="dmL-st-25i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVT-Q6-PN4" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="303" y="0.0" width="91" height="94"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="8UF-gZ-vTG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact">
+                                            <nil key="backgroundColor"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a2A-h2-KBu">
+                                        <rect key="frame" x="0.0" y="416" width="394" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvJ-y1-jaV" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="192" height="94"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="0">
+                                                    <backgroundConfiguration key="background" cornerRadius="30">
+                                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="t7b-Lm-xeC"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hce-TC-d2h">
+                                                <rect key="frame" x="202" y="0.0" width="192" height="94"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGj-NP-flo" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="94"/>
+                                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title=".">
+                                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="32"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="numberButtons:" destination="QUn-qC-UX6" eventType="touchUpInside" id="PWx-nL-SZN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLh-QM-8PH" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="101" y="0.0" width="91" height="94"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="=">
+                                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="JmX-eE-Se6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact">
+                                            <nil key="backgroundColor"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact">
+                                    <nil key="backgroundColor"/>
+                                </variation>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bxq-eS-lgC">
+                                <rect key="frame" x="10" y="108.5" width="434.5" height="271.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-km-ZZG">
+                                        <rect key="frame" x="0.0" y="0.0" width="434.5" height="46.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXo-16-Rpr" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="mr">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="gAv-Tk-6ZW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="39" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yW-tQ-IRe" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="111" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="m+">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="2FS-hG-1R8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rak-LK-KKt" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="101.5" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="m-">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="KBe-8a-BPi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKf-Ym-Yg2" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="333.5" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="mc">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="8fl-EL-a1T"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-H0-evO">
+                                        <rect key="frame" x="0.0" y="56.5" width="434.5" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwG-CL-B7a" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="10x">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="6XM-3D-eYu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gda-PN-8fc" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="111" y="0.0" width="101" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1/x">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="di6-3V-5JY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="has-yh-STB" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="101.5" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="x!">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="VeQ-fC-Xut"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRR-fX-H96" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="333.5" y="0.0" width="101" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ln">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="gjj-vf-LAb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vr9-RO-HCo">
+                                        <rect key="frame" x="0.0" y="112.5" width="434.5" height="46.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elt-IY-jCg" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2√x">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="nRJ-U6-tG6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xea-cw-Tl9" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="111" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3√x">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="z3i-2K-Jch"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocy-m1-NKH" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="101.5" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="y√x">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="ZyC-H3-PnZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vZ-KS-5gL" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="333.5" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ex">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="LOb-Ko-KKS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lM1-Ef-DY5">
+                                        <rect key="frame" x="0.0" y="169" width="434.5" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwX-Ug-B0D" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="sin">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="GR1-ud-tXN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQJ-aX-fRK" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="111" y="0.0" width="101" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="cos">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="rLr-zn-2Jf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dad-zH-5gL" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="101.5" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="tan">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="PZ4-68-KJL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1U-gI-yv6" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="333.5" y="0.0" width="101" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="e">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="pW5-L4-CMB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QDG-Cn-2Wv">
+                                        <rect key="frame" x="0.0" y="225" width="434.5" height="46.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js2-UI-4xq" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="x2">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="BDr-2d-Yzx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6e-G0-NhE" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="111" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="x3">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="yap-R1-M0g"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-Y2-lmc" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="222" y="0.0" width="101.5" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="xy">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="26"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="p6b-gO-9jy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOY-CT-OuT" customClass="MyButton" customModule="ScintificCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="333.5" y="0.0" width="101" height="46.5"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="π">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonTapped:" destination="QUn-qC-UX6" eventType="touchUpInside" id="BxM-pG-Woe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO7-iG-zoT">
+                                <rect key="frame" x="10" y="148" width="384" height="204"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="53"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NRP-Pr-FbE"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G3d-W5-JCf" firstAttribute="leading" secondItem="bxq-eS-lgC" secondAttribute="trailing" constant="10" id="1Jq-bA-mVM"/>
+                            <constraint firstItem="yKf-Ym-Yg2" firstAttribute="width" secondItem="pAp-4O-j6a" secondAttribute="width" multiplier="1.00671" id="1Xh-2T-b4R"/>
+                            <constraint firstItem="iO7-iG-zoT" firstAttribute="top" secondItem="Zej-8u-UJc" secondAttribute="top" id="1c9-pZ-l2B"/>
+                            <constraint firstItem="NRP-Pr-FbE" firstAttribute="trailing" secondItem="G3d-W5-JCf" secondAttribute="trailing" constant="10" id="ATk-kH-8Je"/>
+                            <constraint firstItem="NRP-Pr-FbE" firstAttribute="trailing" secondItem="iO7-iG-zoT" secondAttribute="trailing" constant="20" id="BrE-B4-LNg"/>
+                            <constraint firstItem="NRP-Pr-FbE" firstAttribute="bottom" secondItem="G3d-W5-JCf" secondAttribute="bottom" id="OYw-Jm-r72"/>
+                            <constraint firstItem="G3d-W5-JCf" firstAttribute="top" secondItem="iO7-iG-zoT" secondAttribute="bottom" id="Qbe-qW-nwr"/>
+                            <constraint firstItem="G3d-W5-JCf" firstAttribute="leading" secondItem="NRP-Pr-FbE" secondAttribute="leading" constant="10" id="Sjy-aM-YIF"/>
+                            <constraint firstItem="iO7-iG-zoT" firstAttribute="height" secondItem="G3d-W5-JCf" secondAttribute="height" multiplier="0.4" id="XQK-Lg-qIS"/>
+                            <constraint firstItem="iO7-iG-zoT" firstAttribute="top" secondItem="NRP-Pr-FbE" secondAttribute="top" constant="100" id="ZWO-Hp-zVY"/>
+                            <constraint firstItem="09Z-H0-evO" firstAttribute="leading" secondItem="NRP-Pr-FbE" secondAttribute="leading" constant="10" id="dXz-un-nhP"/>
+                            <constraint firstItem="bxq-eS-lgC" firstAttribute="top" secondItem="iO7-iG-zoT" secondAttribute="bottom" id="fm4-ih-DJ0"/>
+                            <constraint firstItem="iO7-iG-zoT" firstAttribute="leading" secondItem="NRP-Pr-FbE" secondAttribute="leading" constant="10" id="jV3-Rr-bYw"/>
+                            <constraint firstItem="G3d-W5-JCf" firstAttribute="leading" secondItem="NRP-Pr-FbE" secondAttribute="leading" constant="10" id="pRP-Eq-Sxq"/>
+                            <constraint firstItem="NRP-Pr-FbE" firstAttribute="bottom" secondItem="bxq-eS-lgC" secondAttribute="bottom" id="sBM-FO-Qk5"/>
+                            <constraint firstItem="G3d-W5-JCf" firstAttribute="top" secondItem="iO7-iG-zoT" secondAttribute="bottom" id="wF6-JP-Gd0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bxq-eS-lgC"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1c9-pZ-l2B"/>
+                                <exclude reference="Qbe-qW-nwr"/>
+                                <exclude reference="Sjy-aM-YIF"/>
+                                <exclude reference="pRP-Eq-Sxq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="G3d-W5-JCf"/>
+                                <include reference="bxq-eS-lgC"/>
+                                <include reference="iO7-iG-zoT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1c9-pZ-l2B"/>
+                                <exclude reference="ZWO-Hp-zVY"/>
+                                <include reference="Qbe-qW-nwr"/>
+                                <exclude reference="wF6-JP-Gd0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="pRP-Eq-Sxq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="iO7-iG-zoT" id="7oQ-Vt-KFF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQZ-Hb-tqh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="80.706521739130437"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="5Lr-Z5-Oef">
+            <size key="intrinsicContentSize" width="40.5" height="47.5"/>
+        </designable>
+        <designable name="7WW-du-Ubh">
+            <size key="intrinsicContentSize" width="42" height="47.5"/>
+        </designable>
+        <designable name="7vZ-KS-5gL">
+            <size key="intrinsicContentSize" width="52" height="47.5"/>
+        </designable>
+        <designable name="9yW-tQ-IRe">
+            <size key="intrinsicContentSize" width="64.5" height="47.5"/>
+        </designable>
+        <designable name="9yz-ka-cwa">
+            <size key="intrinsicContentSize" width="42" height="47.5"/>
+        </designable>
+        <designable name="AGj-NP-flo">
+            <size key="intrinsicContentSize" width="33" height="51"/>
+        </designable>
+        <designable name="Eh1-sY-oQN">
+            <size key="intrinsicContentSize" width="42" height="47.5"/>
+        </designable>
+        <designable name="F2T-bD-XOQ">
+            <size key="intrinsicContentSize" width="41" height="47.5"/>
+        </designable>
+        <designable name="Ft0-Y2-lmc">
+            <size key="intrinsicContentSize" width="50" height="44"/>
+        </designable>
+        <designable name="Gda-PN-8fc">
+            <size key="intrinsicContentSize" width="58.5" height="47.5"/>
+        </designable>
+        <designable name="H6e-G0-NhE">
+            <size key="intrinsicContentSize" width="49.5" height="42"/>
+        </designable>
+        <designable name="L8A-vq-Hvo">
+            <size key="intrinsicContentSize" width="37" height="47.5"/>
+        </designable>
+        <designable name="QLh-QM-8PH">
+            <size key="intrinsicContentSize" width="42" height="47.5"/>
+        </designable>
+        <designable name="QY7-Ld-rXC">
+            <size key="intrinsicContentSize" width="42" height="47.5"/>
+        </designable>
+        <designable name="Sgo-Om-S64">
+            <size key="intrinsicContentSize" width="40" height="47.5"/>
+        </designable>
+        <designable name="XVT-Q6-PN4">
+            <size key="intrinsicContentSize" width="42" height="47.5"/>
+        </designable>
+        <designable name="XXo-16-Rpr">
+            <size key="intrinsicContentSize" width="56" height="47.5"/>
+        </designable>
+        <designable name="ZwG-CL-B7a">
+            <size key="intrinsicContentSize" width="68" height="47.5"/>
+        </designable>
+        <designable name="b1U-gI-yv6">
+            <size key="intrinsicContentSize" width="40" height="46.5"/>
+        </designable>
+        <designable name="bHi-sv-yNn">
+            <size key="intrinsicContentSize" width="41" height="47.5"/>
+        </designable>
+        <designable name="dad-zH-5gL">
+            <size key="intrinsicContentSize" width="63" height="46.5"/>
+        </designable>
+        <designable name="eQA-NV-SL4">
+            <size key="intrinsicContentSize" width="41.5" height="47.5"/>
+        </designable>
+        <designable name="elt-IY-jCg">
+            <size key="intrinsicContentSize" width="67.5" height="45.5"/>
+        </designable>
+        <designable name="fwX-Ug-B0D">
+            <size key="intrinsicContentSize" width="60" height="46.5"/>
+        </designable>
+        <designable name="gTE-Fa-BOH">
+            <size key="intrinsicContentSize" width="54" height="47.5"/>
+        </designable>
+        <designable name="has-yh-STB">
+            <size key="intrinsicContentSize" width="45.5" height="47.5"/>
+        </designable>
+        <designable name="js2-UI-4xq">
+            <size key="intrinsicContentSize" width="51.5" height="44"/>
+        </designable>
+        <designable name="lNW-ka-K5T">
+            <size key="intrinsicContentSize" width="41.5" height="47.5"/>
+        </designable>
+        <designable name="ocy-m1-NKH">
+            <size key="intrinsicContentSize" width="65.5" height="45.5"/>
+        </designable>
+        <designable name="pAp-4O-j6a">
+            <size key="intrinsicContentSize" width="62" height="47.5"/>
+        </designable>
+        <designable name="pOY-CT-OuT">
+            <size key="intrinsicContentSize" width="41" height="46.5"/>
+        </designable>
+        <designable name="q08-QD-MVU">
+            <size key="intrinsicContentSize" width="42" height="47.5"/>
+        </designable>
+        <designable name="qwL-YV-QoZ">
+            <size key="intrinsicContentSize" width="37" height="47.5"/>
+        </designable>
+        <designable name="rak-LK-KKt">
+            <size key="intrinsicContentSize" width="59.5" height="47.5"/>
+        </designable>
+        <designable name="sQJ-aX-fRK">
+            <size key="intrinsicContentSize" width="68" height="46.5"/>
+        </designable>
+        <designable name="xea-cw-Tl9">
+            <size key="intrinsicContentSize" width="68.5" height="45.5"/>
+        </designable>
+        <designable name="xvJ-y1-jaV">
+            <size key="intrinsicContentSize" width="42" height="51"/>
+        </designable>
+        <designable name="yKf-Ym-Yg2">
+            <size key="intrinsicContentSize" width="61.5" height="47.5"/>
+        </designable>
+        <designable name="yRR-fX-H96">
+            <size key="intrinsicContentSize" width="45.5" height="47.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
